@@ -1,0 +1,42 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{ value.destinazione }}</h1>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input class="form-control" id="nome" type="text" placeholder="Inserisci il tuo nome">
+      </div>
+      <div class="form-group">
+        <label for="cognome">Cognome</label>
+        <input class="form-control" id="cognome" type="text" placeholder="Inserisci il tuo cognome">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" id="email" type="email" placeholder="Inserisci la tua email">
+      </div>
+      <div class="form-group">
+        <label for="carta-di-credito">Carta di credito</label>
+        <input class="form-control" id="carta-di-credito" type="text"
+          placeholder="Inserisci il numero della tua carta di credito">
+      </div>
+      <div class="form-group">
+        <label for="numero-persone">Numero di persone</label>
+        <input class="form-control" id="numero-persone" type="number" min="1"
+          placeholder="Inserisci il numero di persone da acquistare">
+      </div>
+      <button class="btn btn-success" type="submit" (click)="onAcquisto()">Acquista</button>
+      <button class="btn btn-danger" type="submit" (click)="onAnnulla()">Annulla</button>
+    </form>
+  </div>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
+
